@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".JadwalActivity"></activity>
+        <activity android:name=".KiblatActivity"></activity>
+        <activity android:name=".SholatActivity"></activity>
+        <activity android:name=".WudhuActivity"></activity>
     </application>
 
 </manifest>
