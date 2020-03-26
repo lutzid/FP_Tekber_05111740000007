@@ -49,6 +49,6 @@ public class KiblatActivity extends AppCompatActivity implements SensorEventList
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy){
-        
+
     }
 }
