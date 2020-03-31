@@ -17,13 +17,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        jadwalintent = (Button)findViewById(R.id.jadwal);
+        jadwalintent = findViewById(R.id.jadwal);
         jadwalintent.setOnClickListener(this);
-        kiblatintent = (Button)findViewById(R.id.kiblat);
+        kiblatintent = findViewById(R.id.kiblat);
         kiblatintent.setOnClickListener(this);
-        sholatintent = (Button)findViewById(R.id.sholat);
+        sholatintent = findViewById(R.id.sholat);
         sholatintent.setOnClickListener(this);
-        wudhuintent = (Button)findViewById(R.id.wudhu);
+        wudhuintent = findViewById(R.id.wudhu);
         wudhuintent.setOnClickListener(this);
     }
 
@@ -31,20 +31,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.jadwal:
-                Intent jadwal = new Intent(this, JadwalActivity.class);
-                startActivity(jadwal);
+                startActivity(new Intent(this, JadwalActivity.class));
                 break;
             case R.id.kiblat:
-                Intent kiblat = new Intent(this, KiblatActivity.class);
-                startActivity(kiblat);
+                startActivity(new Intent(this, KiblatActivity.class));
                 break;
             case R.id.sholat:
-                Intent sholat = new Intent(this, SholatActivity.class);
-                startActivity(sholat);
+                startActivity(new Intent(this, SholatActivity.class));
                 break;
             case R.id.wudhu:
-                Intent wudhu = new Intent(this, WudhuActivity.class);
-                startActivity(wudhu);
+                startActivity(new Intent(this, WudhuActivity.class));
                 break;
             default:
                 break;
