@@ -65,11 +65,6 @@ public class JadwalActivity extends AppCompatActivity {
     }
 
     private void getJadwal () {
-
-//        progressDialog = new ProgressDialog(JadwalActivity.this);
-//        progressDialog.setMessage("Silahkan tunggu ...");
-//        progressDialog.show();
-
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(ApiUrl.URL_ROOT)
                 .addConverterFactory(GsonConverterFactory.create())
@@ -81,9 +76,6 @@ public class JadwalActivity extends AppCompatActivity {
         call.enqueue(new Callback<Jadwal>() {
             @Override
             public void onResponse(Call<Jadwal> call, Response<Jadwal> response) {
-
-//                progressDialog.dismiss();
-
                 if (response.isSuccessful()) {
                     tv_lokasi_value.setText(response.body().getCity()+", "+response.body().getItems().get(0).getDateFor());
                     tv_fajr_value.setText(response.body().getItems().get(0).getFajr());
@@ -92,7 +84,6 @@ public class JadwalActivity extends AppCompatActivity {
                     tv_asr_value.setText(response.body().getItems().get(0).getAsr());
                     tv_maghrib_value.setText(response.body().getItems().get(0).getMaghrib());
                     tv_isha_value.setText(response.body().getItems().get(0).getIsha());
-
                 } else {
                     Toast.makeText(JadwalActivity.this, "Sorry, please try again...", Toast.LENGTH_SHORT).show();
                 }
@@ -104,6 +95,5 @@ public class JadwalActivity extends AppCompatActivity {
                 Toast.makeText(JadwalActivity.this, "Sorry, please try again... server Down..", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 }

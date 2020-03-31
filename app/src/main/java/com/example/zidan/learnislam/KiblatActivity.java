@@ -7,6 +7,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
@@ -24,6 +25,9 @@ public class KiblatActivity extends AppCompatActivity implements SensorEventList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kiblat);
 
+        getSupportActionBar().setTitle("Arah Kiblat");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         kiblat_kompas = findViewById(R.id.kiblat_kompas);
 
         sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
@@ -34,6 +38,17 @@ public class KiblatActivity extends AppCompatActivity implements SensorEventList
         } else {
             Toast.makeText(getApplicationContext(), "Your Smartphone Is No Support", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
