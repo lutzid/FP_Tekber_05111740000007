@@ -71,7 +71,7 @@ public class JadwalActivity extends AppCompatActivity {
                 .build();
 
         ApiService apiService = retrofit.create(ApiService.class);
-        Call<Jadwal> call = apiService.getJadwal();
+        Call<Jadwal> call = apiService.getJadwal("Solo");
 
         call.enqueue(new Callback<Jadwal>() {
             @Override
