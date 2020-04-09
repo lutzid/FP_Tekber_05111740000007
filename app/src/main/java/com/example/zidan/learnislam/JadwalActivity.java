@@ -8,7 +8,6 @@ import android.location.Location;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,8 +31,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class JadwalActivity extends AppCompatActivity {
 
-    private TextView tv_lokasi_value, tv_fajr_value, tv_shurooq_value,
-            tv_dhuhr_value, tv_asr_value, tv_maghrib_value, tv_isha_value;
+    private TextView tv_lokasi_value, tv_fajr_value, tv_dhuhr_value,
+            tv_asr_value, tv_maghrib_value, tv_isha_value;
     private FloatingActionButton fab_refresh;
     private ProgressDialog progressDialog;
     private String city;
@@ -49,7 +48,6 @@ public class JadwalActivity extends AppCompatActivity {
 
         tv_lokasi_value = findViewById(R.id.tv_lokasi_value);
         tv_fajr_value = findViewById(R.id.tv_fajr_value);
-        tv_shurooq_value = findViewById(R.id.tv_shurooq_value);
         tv_dhuhr_value = findViewById(R.id.tv_dhuhr_value);
         tv_asr_value = findViewById(R.id.tv_asr_value);
         tv_maghrib_value = findViewById(R.id.tv_maghrib_value);
@@ -125,7 +123,6 @@ public class JadwalActivity extends AppCompatActivity {
                     progressDialog.dismiss();
                     tv_lokasi_value.setText(response.body().getQuery()+", "+response.body().getItems().get(0).getDateFor());
                     tv_fajr_value.setText(response.body().getItems().get(0).getFajr());
-                    tv_shurooq_value.setText(response.body().getItems().get(0).getShurooq());
                     tv_dhuhr_value.setText(response.body().getItems().get(0).getDhuhr());
                     tv_asr_value.setText(response.body().getItems().get(0).getAsr());
                     tv_maghrib_value.setText(response.body().getItems().get(0).getMaghrib());
