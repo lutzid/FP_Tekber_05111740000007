@@ -25,8 +25,8 @@ public class KiblatActivity extends AppCompatActivity implements SensorEventList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kiblat);
 
-        getSupportActionBar().setTitle("Arah Kiblat");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setTitle("Arah Kiblat");
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         kiblat_kompas = findViewById(R.id.kiblat_kompas);
 
@@ -40,16 +40,16 @@ public class KiblatActivity extends AppCompatActivity implements SensorEventList
         }
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-        if (id == android.R.id.home) {
-            finish();
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//        int id = item.getItemId();
+//        if (id == android.R.id.home) {
+//            finish();
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 
     @Override
     public void onSensorChanged(SensorEvent event){

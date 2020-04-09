@@ -44,8 +44,8 @@ public class JadwalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jadwal);
 
-        getSupportActionBar().setTitle("Jadwal Sholat");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setTitle("Jadwal Sholat");
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tv_lokasi_value = findViewById(R.id.tv_lokasi_value);
         tv_fajr_value = findViewById(R.id.tv_fajr_value);
@@ -76,16 +76,16 @@ public class JadwalActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-        if (id == android.R.id.home) {
-            finish();
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//        int id = item.getItemId();
+//        if (id == android.R.id.home) {
+//            finish();
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 
     public String currentLocation(double lat, double lon){
         String currentCity = "";

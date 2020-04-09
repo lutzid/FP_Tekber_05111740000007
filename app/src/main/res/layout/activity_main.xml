@@ -1,70 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#fff"
+    android:orientation="vertical">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center">
 
-    <Button
-        android:id="@+id/wudhu"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginTop="20dp"
-        android:text="Panduan Wudhu" />
+        <ImageView
+            android:id="@+id/greeting_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img_default_half_night"
+            android:scaleType="fitXY"/>
 
-    <Button
-        android:id="@+id/jadwal"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignBottom="@+id/wudhu"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="30dp"
-        android:text="Jadwal Sholat" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn Islam"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:layout_centerInParent="true"/>
 
-    <Button
-        android:id="@+id/sholat"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_below="@+id/wudhu"
-        android:layout_alignStart="@+id/wudhu"
-        android:layout_marginStart="0dp"
-        android:text="Panduan Sholat" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+        </RelativeLayout>
 
-    <Button
-        android:id="@+id/kiblat"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_below="@+id/jadwal"
-        android:layout_alignStart="@+id/jadwal"
-        android:layout_alignBottom="@+id/sholat"
-        android:layout_marginStart="0dp"
-        android:text="Arah Kiblat" />
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/doa"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_below="@+id/sholat"
-        android:layout_alignStart="@+id/wudhu"
-        android:layout_marginStart="0dp"
-        android:text="Kumpulan doa" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="8.0dip">
 
-    <Button
-        android:id="@+id/adzan"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_below="@+id/kiblat"
-        android:layout_alignStart="@+id/jadwal"
-        android:layout_alignBottom="@+id/doa"
-        android:text="Adzan" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
 
-</RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/wudhu"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:padding="20dp"
+                        android:drawableTop="@drawable/btn_wudhu"
+                        android:text="Panduan Wudhu"
+                        android:layout_margin="20dp"
+                        android:background="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/jadwal"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:padding="20dp"
+                        android:drawableTop="@drawable/btn_jadwal"
+                        android:text="Jadwal Sholat"
+                        android:layout_margin="20dp"
+                        android:background="@android:color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/sholat"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:padding="20dp"
+                        android:drawableTop="@drawable/btn_shalat"
+                        android:text="Panduan Sholat"
+                        android:layout_margin="20dp"
+                        android:background="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/kiblat"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:padding="20dp"
+                        android:drawableTop="@drawable/btn_compass"
+                        android:text="Arah Kiblat"
+                        android:layout_margin="20dp"
+                        android:background="@android:color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/doa"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:padding="20dp"
+                        android:drawableTop="@drawable/btn_doa"
+                        android:text="Kumpulan doa"
+                        android:layout_margin="20dp"
+                        android:background="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/adzan"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:padding="20dp"
+                        android:drawableTop="@drawable/btn_adzan"
+                        android:text="Adzan"
+                        android:layout_margin="20dp"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
