@@ -64,6 +64,12 @@
                 android:gravity="right"
                 android:layout_weight="1" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_alarm_off_black_18dp"
+                android:paddingLeft="15dp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -89,6 +95,12 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_alarm_off_black_18dp"
+                android:paddingLeft="15dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -113,6 +125,12 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_alarm_off_black_18dp"
+                android:paddingLeft="15dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -138,6 +156,12 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:layout_weight="1" />
+
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_alarm_off_black_18dp"
+            android:paddingLeft="15dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -163,6 +187,12 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_alarm_off_black_18dp"
+                android:paddingLeft="15dp" />
         </LinearLayout>
     </LinearLayout>
 
