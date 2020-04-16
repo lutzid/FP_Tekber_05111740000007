@@ -8,10 +8,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button jadwalintent;
-    Button kiblatintent;
-    Button sholatintent;
-    Button wudhuintent;
+    Button jadwalintent, kiblatintent, sholatintent, wudhuintent,
+            doaintent, asmaulhusnaintent, adzanintent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +23,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sholatintent.setOnClickListener(this);
         wudhuintent = findViewById(R.id.wudhu);
         wudhuintent.setOnClickListener(this);
+        doaintent = findViewById(R.id.doa);
+        doaintent.setOnClickListener(this);
+        adzanintent = findViewById(R.id.adzan);
+        adzanintent.setOnClickListener(this);
+        asmaulhusnaintent = findViewById(R.id.asmaul_husna);
+        asmaulhusnaintent.setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +45,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.wudhu:
                 startActivity(new Intent(this, WudhuActivity.class));
+                break;
+            case R.id.doa:
+                startActivity(new Intent(this, DoaActivity.class));
+                break;
+            case R.id.adzan:
+                startActivity(new Intent(this, AdzanActivity.class));
+                break;
+            case R.id.asmaul_husna:
+                startActivity(new Intent(this, AsmaulHusnaActivity.class));
                 break;
             default:
                 break;
