@@ -24,6 +24,10 @@
         <activity android:name=".KiblatActivity"></activity>
         <activity android:name=".SholatActivity"></activity>
         <activity android:name=".WudhuActivity"></activity>
+        <activity android:name=".AdzanActivity"></activity>
+        <activity android:name=".AsmaulHusnaActivity"></activity>
+        <activity android:name=".DoaActivity"></activity>
+
     </application>
 
 </manifest>
