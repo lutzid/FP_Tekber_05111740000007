@@ -1,4 +1,6 @@
 package com.example.zidan.learnislam;
 
-public class AdzanActivity {
+import android.support.v7.app.AppCompatActivity;
+
+public class AdzanActivity extends AppCompatActivity {
 }

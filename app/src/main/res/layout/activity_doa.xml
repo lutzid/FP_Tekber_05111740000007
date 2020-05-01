@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".JadwalActivity">
+    tools:context=".DoaActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -83,6 +83,48 @@
 
                 <TextView
                     android:text="Doa sesudah tidur"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="10dip" >
+
+                <TextView
+                    android:text="Doa masuk toilet"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="10dip" >
+
+                <TextView
+                    android:text="Doa masuk masjid"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="10dip" >
+
+                <TextView
+                    android:text="Doa hendak bepergian"
                     android:textStyle="bold"
                     android:textSize="24dp"
                     android:layout_width="wrap_content"
