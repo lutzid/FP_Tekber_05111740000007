@@ -12,41 +12,96 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:src="@drawable/adzan" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1. Allahu Akbar, Allahu Akbar (2x)."/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:background="@drawable/border"
+            android:padding="10dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Allahu Akbar, Allahu Akbar (2x)."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2. Asyhadu alla ilaaha illallah (2x)."/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:background="@drawable/border"
+            android:padding="10dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Asyhadu alla ilaaha illallah (2x)."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3. Asyhadu anna Muhammadar Rasulullah (2x)."/>
+            android:background="@drawable/border"
+            android:padding="10dip">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Asyhadu anna Muhammadar Rasulullah (2x)."/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="10dip">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4. Hayya alash Shalah (2x)."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="10dip">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5. Hayya alal Falaah (2x)."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="10dip">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="6. Allahu Akbar, Allahu Akbar."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="10dip">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="7. Laa ilaaha illallah."/>
+
+    </LinearLayout>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
