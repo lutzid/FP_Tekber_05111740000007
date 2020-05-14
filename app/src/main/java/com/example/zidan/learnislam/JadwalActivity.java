@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +37,8 @@ public class JadwalActivity extends AppCompatActivity {
     private FloatingActionButton fab_refresh;
     private ProgressDialog progressDialog;
     private String city;
+    private Button alarm_subuh_btn, alarm_dhuhur_btn, alarm_ashar_btn, alarm_maghrib_btn, alarm_isya_btn;
+    boolean subuh = false, dhuhur = false, ashar = false, maghrib = false, isya = false;
 
     @SuppressLint("MissingPermission")
     @Override
@@ -70,6 +73,77 @@ public class JadwalActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 getJadwal(city);
+            }
+        });
+
+        alarm_subuh_btn = findViewById(R.id.alarm_subuh);
+        alarm_subuh_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(subuh) {
+                    subuh = false;
+                    alarm_subuh_btn.setBackgroundResource(R.drawable.baseline_alarm_off_black_18dp);
+                }
+                else {
+                    subuh = true;
+                    alarm_subuh_btn.setBackgroundResource(R.drawable.baseline_alarm_on_black_18dp);
+                }
+            }
+        });
+        alarm_dhuhur_btn = findViewById(R.id.alarm_dhuhur);
+        alarm_dhuhur_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(dhuhur) {
+                    dhuhur = false;
+                    alarm_dhuhur_btn.setBackgroundResource(R.drawable.baseline_alarm_off_black_18dp);
+                }
+                else {
+                    dhuhur = true;
+                    alarm_dhuhur_btn.setBackgroundResource(R.drawable.baseline_alarm_on_black_18dp);
+                }
+            }
+        });
+        alarm_ashar_btn = findViewById(R.id.alarm_ashar);
+        alarm_ashar_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(ashar) {
+                    ashar = false;
+                    alarm_ashar_btn.setBackgroundResource(R.drawable.baseline_alarm_off_black_18dp);
+                }
+                else {
+                    ashar = true;
+                    alarm_ashar_btn.setBackgroundResource(R.drawable.baseline_alarm_on_black_18dp);
+                }
+            }
+        });
+        alarm_maghrib_btn = findViewById(R.id.alarm_maghrib);
+        alarm_maghrib_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(maghrib) {
+                    maghrib = false;
+                    alarm_maghrib_btn.setBackgroundResource(R.drawable.baseline_alarm_off_black_18dp);
+                }
+                else {
+                    maghrib = true;
+                    alarm_maghrib_btn.setBackgroundResource(R.drawable.baseline_alarm_on_black_18dp);
+                }
+            }
+        });
+        alarm_isya_btn = findViewById(R.id.alarm_isya);
+        alarm_isya_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(isya) {
+                    isya = false;
+                    alarm_isya_btn.setBackgroundResource(R.drawable.baseline_alarm_off_black_18dp);
+                }
+                else {
+                    isya = true;
+                    alarm_isya_btn.setBackgroundResource(R.drawable.baseline_alarm_on_black_18dp);
+                }
             }
         });
     }

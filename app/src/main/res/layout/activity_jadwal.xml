@@ -33,6 +33,14 @@
             android:layout_alignParentBottom="true">
         </RelativeLayout>
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_refresh_white_24dp" />
     </RelativeLayout>
 
     <LinearLayout
@@ -64,11 +72,12 @@
                 android:gravity="right"
                 android:layout_weight="1" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_alarm_off_black_18dp"
-                android:paddingLeft="15dp" />
+            <Button
+                android:id="@+id/alarm_subuh"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/baseline_alarm_off_black_18dp" />
 
         </LinearLayout>
 
@@ -96,11 +105,12 @@
                 android:gravity="right"
                 android:layout_weight="1" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_alarm_off_black_18dp"
-                android:paddingLeft="15dp" />
+            <Button
+                android:id="@+id/alarm_dhuhur"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/baseline_alarm_off_black_18dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -126,11 +136,12 @@
                 android:gravity="right"
                 android:layout_weight="1" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_alarm_off_black_18dp"
-                android:paddingLeft="15dp" />
+            <Button
+                android:id="@+id/alarm_ashar"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/baseline_alarm_off_black_18dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -157,11 +168,12 @@
                 android:gravity="right"
                 android:layout_weight="1" />
 
-            <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_alarm_off_black_18dp"
-            android:paddingLeft="15dp" />
+            <Button
+                android:id="@+id/alarm_maghrib"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/baseline_alarm_off_black_18dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -188,21 +200,15 @@
                 android:gravity="right"
                 android:layout_weight="1" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_alarm_off_black_18dp"
-                android:paddingLeft="15dp" />
+            <Button
+                android:id="@+id/alarm_isya"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/baseline_alarm_off_black_18dp" />
         </LinearLayout>
+
     </LinearLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_refresh"
-        android:src="@drawable/ic_refresh_white_24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
 
 </LinearLayout>
