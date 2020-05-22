@@ -47,6 +47,10 @@ class JadwalActivity : AppCompatActivity() {
             }
 
         }
+        val refresh_btn = findViewById(R.id.fab_refresh) as Button
+        refresh_btn.setOnClickListener {
+            loadKota()
+        }
         val alarm_subuh_btn = findViewById(R.id.alarm_subuh) as Button
         alarm_subuh_btn.setOnClickListener {
             if(subuh){
