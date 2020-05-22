@@ -6,8 +6,8 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
