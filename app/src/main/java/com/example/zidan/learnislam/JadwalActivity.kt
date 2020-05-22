@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.*
 import com.example.zidan.learnislam.model.ClientAsyncTask
 import com.example.zidan.learnislam.model.DaftarKota
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.android.synthetic.main.activity_jadwal.*
 import org.json.JSONException
 import org.json.JSONObject
@@ -47,7 +48,7 @@ class JadwalActivity : AppCompatActivity() {
             }
 
         }
-        val refresh_btn = findViewById(R.id.fab_refresh) as Button
+        val refresh_btn = findViewById(R.id.fab_refresh) as FloatingActionButton
         refresh_btn.setOnClickListener {
             loadKota()
         }
